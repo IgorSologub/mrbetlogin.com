@@ -42,9 +42,9 @@ public class MainTest extends BaseTest {
 
     @Test(invocationCount = 2, successPercentage = 99)
     public void footerButtonsTest () {
-        basePage.closePopup();
         int goodTitlesCount = 0;
         for (int i = 1; i <= NUMBER_OF_GOOD_FOOTER_BUTTONS; i++) {
+            basePage.closePopup();
             basePage.waitOneSeconds();
             basePage.footerButtonClick(i);
             basePage.waitOneSeconds();
